@@ -1,7 +1,7 @@
 ---
 HOME: <|°_°|>
 ---
-| [home](thomaslodgewilliams.com) | [portfolio](/portfolio) | [blog](/blog) | [project list](/project_list) | [links](/links) |
+| [home](/) | [portfolio](/portfolio) | [blog](/blog) | [project list](/project_list) | [links](/links) |
 ============================================
 
 # Home
