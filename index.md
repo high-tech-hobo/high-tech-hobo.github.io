@@ -1,4 +1,8 @@
-| [home](/) | [portfolio](/portfolio) | [blog](/blog) | [project list](/project_list) | [links](/links) |
+---
+HOME: 
+---
+
+| [home]() | [portfolio](/portfolio) | [blog](/blog) | [project list](/project_list) | [links](/links) |
 ============================================
 
 # Home
