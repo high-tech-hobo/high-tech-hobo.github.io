@@ -1,3 +1,4 @@
+<p align="center">
 ---
 BLOG: °‿‿°
 ---
@@ -28,3 +29,5 @@ A place were I periodically write things that I think are worth writing down. My
     This post is entirely for testing, but I figured it would be a good way to hide my age on my site. 
 
 <br>
+
+</p>
