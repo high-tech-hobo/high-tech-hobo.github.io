@@ -1,4 +1,4 @@
-<p align="center">
+
 ---
 BLOG: °‿‿°
 ---
@@ -30,4 +30,3 @@ A place were I periodically write things that I think are worth writing down. My
 
 <br>
 
-</p>
