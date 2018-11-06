@@ -21,6 +21,7 @@ Next Post: [TITLE]{link}
 Prev Post: [TITLE]{link}
 
 <br>
+
 ### > 12_12_2012_01 - TITLE
 
 Tesseract tingling of the spine cosmic ocean as a patch of light encyclopaedia galactica a billion trillion. Something incredible is waiting to be known emerged into consciousness with pretty stories for which there's little good evidence concept of the number one another world Apollonius of Perga. Invent the universe the sky calls to us invent the universe a very small stage in a vast cosmic arena made in the interiors of collapsing stars finite but unbounded?
@@ -33,6 +34,7 @@ Next Post: [TITLE]{link}
 Prev Post: [TITLE]{link}
 
 <br>
+
 ### > 12_12_2012_01 - TITLE
 
 Tesseract tingling of the spine cosmic ocean as a patch of light encyclopaedia galactica a billion trillion. Something incredible is waiting to be known emerged into consciousness with pretty stories for which there's little good evidence concept of the number one another world Apollonius of Perga. Invent the universe the sky calls to us invent the universe a very small stage in a vast cosmic arena made in the interiors of collapsing stars finite but unbounded?
