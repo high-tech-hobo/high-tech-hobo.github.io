@@ -1,5 +1,8 @@
-@import "{{ site.theme }}";
-
-header {
-  display: none;
-}
+body {background-color: rgb(44, 44, 44); font-family:'Lucida Console';}
+div  {text-align: center;}
+h1   {color: white; font-size:30px;}
+h2   {color: white; font-size:26px}
+h3   {color: white; font-size:22px}
+h4   {color: white; font-size:18px;}
+p    {color: white; font-size:18px}
+hr   {color: darkcyan; }
