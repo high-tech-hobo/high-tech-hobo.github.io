@@ -89,12 +89,12 @@
 				<p><a href="https://lightburnsoftware.com/">Lightburn</a> was used instead of the propriety Voccell software that controls the <a href="https://voccell.com/wp/techspecs/">50 Watt Voccell CO2 laser</a>. The machine needed to easily incorporate various graphics file formats while maintaining layer hierarchy - and LightBurn addressed those needs. The Voccell software package is also Windows-only and EPI is primarily a MacOS space.</P>
 				<p>Preliminary tests were done at low power with paper instead of plexiglass to ensure that the machine (excepting the laser) was functioning properly. The first test print can be seen below in the <a href="#paradise-made-full-plate">Paradise Made</a> entry. With only being on paper this test doesn’t show a ton of detail, there is potential in areas like the text and the figure in the middle.</p>
 				<h4>Tuning the Laser</h4>
-				<p>The laser has 2 main parameters that affect a cut: speed and power. Power determines the raw cutting strength of the laser as a percentage of full possible laser output. Speed determines how power is distributed along a cut path. Low power at low speeds can do similar things as high power at high speed, but using higher power can cause distortions in the cut and the precision of the cut edges suffer. To assess speed and power relationships I developed a series of testing swatches to qualitatively evaluate how speed and power adjustments effect the final cut. Gradient testing was done using the original <a href="https://github.com/high-tech-hobo/portfolio/blob/master/pictures/paradise_made/milton_comic_cover.tif?raw=true">Paradise Made</a> image file and a few other generated gradients.</p>
-				<img class=fixed src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/laser-cutter/test-grid-1.jpeg">
-				<img class=fixed src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/laser-cutter/test-grid-2.jpeg">
+				<p>The laser has 2 main parameters that affect a cut: speed and power. Power determines the raw cutting strength of the laser as a percentage of full possible laser output. Speed determines how power is distributed along a cut path. Low power at low speeds can do similar things as high power at high speed, but using higher power can cause distortions in the cut and the precision of the cut edges suffer. To assess speed and power relationships I developed a series of testing swatches to qualitatively evaluate how speed and power adjustments effect the final cut. Gradient testing was done using the original <a href="https://github.com/thomas-williams/portfolio/blob/master/pictures/paradise_made/milton_comic_cover.tif?raw=true">Paradise Made</a> image file and a few other generated gradients.</p>
+				<img class=fixed src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/laser-cutter/test-grid-1.jpeg">
+				<img class=fixed src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/laser-cutter/test-grid-2.jpeg">
 				<p>A final variable we did not account for during initial testing was the variable distance the laser travels from it’s source as the cutting head moves; cuts made farther away from the source of the laser were shallower given the same speed and power settings. The main mirror  assembly is shown below, both installed and isolated.</p>
-				<img class=fixed src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/laser-cutter/mirror-focusing.jpeg">
-				<img class=fixed src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/laser-cutter/mirror-assembly.jpeg">
+				<img class=fixed src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/laser-cutter/mirror-focusing.jpeg">
+				<img class=fixed src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/laser-cutter/mirror-assembly.jpeg">
 				<p>Given a properly aligned mirror assembly, cutting power should not inversely scale with distance. The laser’s lack of accuracy was also due to a poorly aligned beam-combining lens that merges the cutting beam with a standard red laser to visually track the cutting beam. After removing the mirror assembly it was clear the Voccell laser was not made to the tolerances required by our project. Walking near the laser or leaning on the table it was on could cause the mirror assembly to wobble, throwing everything out of alignment and weakening the cutting beam. All screws were greased and any stationary parts were also taped in place. The stationary mirrors were focused working away from the laser tube, making sure the red laser and cutting laser were aligned at each mirror. By simply putting a piece of tape on the mirror and briefly pulsing the laser you can compare the burn spot to the red laser location.</p>
 				<blockquote>DISCLAIMER: WHILE DOING THIS YOU ARE POINTING AN INVISIBLE CUTTING LASER AROUND THE ROOM. WEAR APPROPRIATE PROTECTIVE EQUIPMENT AND SHIELD OTHERS FROM THE LASER'S BEAM. IF YOU CAN'T FIND THE CUTTING LASER'S BURN SPOT THAT MEANS IT MIGHT HAVE HIT SOMEWHERE BEHIND THE MIRROR IT WAS SUPPOSED TO HIT. DO NOT STAND BEHIND THE MIRROR YOU ARE AIMING AT.</blockquote>
 				<p>The mirror that moves along the short axis of the cutting bed needs to be perfectly parallel to the edge of the cutting area as the laser moves during a cut. There will be a diagram showing this below. A transparent guide is place in the laser path at the top corner of the short axis and the mirror is positioned at the bottom. By placing the guide where the mirror would be at top and aiming the laser to hit both the guide and the mirror at the lower corner is can be made perfectly parallel to the axis of movement.</p>
@@ -123,29 +123,29 @@
                         <P>The whole process started with learning how to use the laser cutter. I very quickly realized I was not getting the quality I expected, so I taught myself how to refocus the laser, and generally gave the whole thing a tune up. After doing that I could begin to work with actual images. The end goal here is to be able to etch plexiglass plates to then ink and print. That being said I did not want to waste much plexi dialing in the settings, so I used paper at first.</P>
                     <br>
                         <p>This is the final test before I moved on to plexi.</p>
-                    <img class=fixed src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/paradise_made/laser-test.png"/>
+                    <img class=fixed src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/paradise_made/laser-test.png"/>
 
                     <h4>Moving to Plexi</h4>
                         <p>So once I was comfortable with the laser I began testing on small amounts of plexi. This meant figuring out how I was going to achieve shading once I inked a plate. When giving the laser an image there are many different options of dithering. I made a true gradient in a graphics editor and then applied each of the lasers dithering patterns to it, etched it into a plate, inked it, and printed it.</p>
-                    <img class=fixed src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/paradise_made/gradient-test.png">
+                    <img class=fixed src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/paradise_made/gradient-test.png">
                     <p>This is the second test because I also experimented with sanding at this point. A light amount of sanding ended up being the best and the results of that are the image above. I also wasn't totally happy with any of these shading patterns for my purposes, so I went with another method. The last row of the test above is called 'threshold' and activates the laser when a given pixel is a certain shade of grey and above. With this I could define my shading in my graphics editor and then cut my image with threshold and any pixel I want to end up with ink will be cut.</p>
                     
                     <h4>Image Testing</h4>
                         <p> After doing the above testing I used a halftone pattern to define shading from the original image, and then cut a small portion of the full image to ink and test. I plan on actually using white ink for this, so the area of the plate I etched with the laser is where the original image has white space.</p>
-                    <img class=fixed src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/paradise_made/white-test.png">
+                    <img class=fixed src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/paradise_made/white-test.png">
 
                     <h4>Full Plate</h4> <a name="paradise-made-full-plate"><a/>
                         <p>So after all this testing I was ready to cut a full plate. It's not perfect, but it is very usable and serves as a good example of what this process is capable of. The colors of these proofs are inverted from the final piece because I only had a small amount of black paper that would hold up to the white ink, as that ink is very sticky. At the moment the cut is a little too deep, and really holds on to a lot of ink. This in combination with how sticky the white ink is poses a real threat to any type of paper I might use. So the plate will need to be recut, but I am very happy with how these proofs looks.</p>
-                    <img class=fixed src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/paradise_made/current-plate.png">
-                    <img class=fixed src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/paradise_made/current-proof.png">
+                    <img class=fixed src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/paradise_made/current-plate.png">
+                    <img class=fixed src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/paradise_made/current-proof.png">
 
                     <h4>Paper Testing</h4>
                         <p>With a usable plate the next step I needed to tackle was getting black paper. Thus far I had been largely using scraps from the studio for my testing and I wanted to try and keep that going. The studio I have been working in keeps a lot of scrap paper, and recently got a paper pulper. Before getting the pulper working I did some small scale testing making my own paper using a blender and screens.</p>
-                    <img class=fixed src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/paradise_made/paper-test.png">
+                    <img class=fixed src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/paradise_made/paper-test.png">
                     
                         <p>The 3 large grey pieces were made by mixing Sumi ink into the paper pulp slurry and then forming sheets of varying thickness. The color of these was not dark enough, so I did some small scale tests. The 4 small pieces on the right from top to bottom are: Dry white paper soaked in Sumi ink, pre-soaked white paper in Sumi ink, the grey paper pre-soaked in water them ink, and a dry piece of grey paper soaked in Sumi ink. Of these the best one is the grey paper, pre-soaked and them soaked in ink. The paper pulper is now up and running, so some larger scale tests can be done. The paper pulper is a sort of <a href="https://www.paperslurry.com/2013/07/12/the-critter-paper-beater-is-dandy-for-hand-papermaking-studios/">kit</a> that I helped source a motor for and then wired that motor and mounted it to the rest of the machine.</p>
 
-                    <img class=fixed src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/paper-making/complete-assembly.jpeg">
+                    <img class=fixed src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/paper-making/complete-assembly.jpeg">
 
                     <h4>Current State</h4>
                         <p>This pretty much concludes where this project is at the moment. Testing and experimenting with paper is currently underway, but once something usable is produced I can begin testing the plate on that paper with white ink. In the meantime I will recut the plate to be a bit less deep, which should improve image quality.</p>
@@ -158,7 +158,7 @@
                     <h2>Character Commission</h2>
                         <h3>Summer, 2018</h3>
                         <p>This is actually part of a series of characters for a Dungeons and Dragons campaign. Still a working draft, all digital on Wacom Cintiq. Style inspired by Studio Ghibli.</p>
-                        <img class=fixed src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/commissions/char-1.png"/>
+                        <img class=fixed src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/commissions/char-1.png"/>
                 </div>
 
                 <hr>
@@ -166,12 +166,12 @@
                 <div id="port_entry";>
                     <h2>Paradise Made</h2>
                         <h3>Spring, 2018</h3>
-                        <p>I was inspired by John Milton’s <u>Paradise Lost</u> to make a comic book with no words that explores the morality, utility, and vanity of the characters in the book and, by extension, all of humanity. The image displayed below is a PNG and thus subject to compression, for the raw image in full resolution with very little compression please click <a href="https://github.com/high-tech-hobo/portfolio/blob/master/pictures/paradise_made/milton_comic_cover.tif?raw=true">HERE</a>.</p>
+                        <p>I was inspired by John Milton’s <u>Paradise Lost</u> to make a comic book with no words that explores the morality, utility, and vanity of the characters in the book and, by extension, all of humanity. The image displayed below is a PNG and thus subject to compression, for the raw image in full resolution with very little compression please click <a href="https://github.com/thomas-williams/portfolio/blob/master/pictures/paradise_made/milton_comic_cover.tif?raw=true">HERE</a>.</p>
 
-                        <img src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/paradise_made/milton_comic_cover.png"/>
+                        <img src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/paradise_made/milton_comic_cover.png"/>
 
                         <p>Since developing this cover image I have since done some test screen printing of it while I work on the inside of the book. The greyscale halftone black ink layer is below. This looks very similar, but if you open the raw files and zoom in you can see that the one below is made up of different sized black dots. The density of those dots when you zoom back out results in all the different shades of grey needed to create the image.</p>
-                        <img src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/paradise_made/milton_burn_layer.png"/>
+                        <img src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/paradise_made/milton_burn_layer.png"/>
                         <br>
                 </div>
 
@@ -181,7 +181,7 @@
                     <h2>Internet Friend</h2>
                         <h3>Spring, 2018</h3>
                         <p>I used an <a href="https://machinelearningmastery.com/text-generation-lstm-recurrent-neural-networks-python-keras/"> LSTM</a> text generating neural network to teach a computer English using only the messages I had sent prior to downloading the data from, and then deleting, my Facebook account. Needless to say, the computer did not learn very intelligible English. It did however, learn phonemes, which are sounds with meaning, almost like syllables, but even shorter, like the phonetic breakdown of words. I plan on revisiting this to make it a little more interactive, like being able to talk to myself, but only the version of me that was on Facebook.</p>
-                        <img src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/other/internet_friend.jpg"/>
+                        <img src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/other/internet_friend.jpg"/>
                 </div>
 
                 <hr>
@@ -190,7 +190,7 @@
                     <h2><a href="https://www.instagram.com/now_in_billions_of_colors/">now_in_billions_of_colors</a></h2>
                         <h3>Spring, 2018</h3>
                         <p>An internet-based project currently taking the form of performance art, this piece is a collaboration with <a href="http://clarkaddis.com/">Clark Addis</a>. We are posting a color a day, iterating through the RGB color spectrum. Long term goals are to automate the process and start a longer version that could theoretically display 16,777,216 colors, which would run for almost 46,000 years.</p>
-                        <img src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/other/billions_of_colors.png"/>
+                        <img src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/other/billions_of_colors.png"/>
                 </div>
 
                 <hr>
@@ -200,28 +200,28 @@
                     <h3>Fall, 2017</h3>
                         <h4>Installation</h4>
                             <p>This project started with a romanticized vision of my return to art after spending 2.5 years in engineering. After some initial critiques and chatting with visiting artists, I settled on this idea of taking that core symbol of my favorite childhood toy, the 2x4 LEGO brick, and experimenting with the construction of it. I had seen <a href="https://www.youtube.com/watch?v=P2O7vyKnYfo">this</a> video at some point, and had been playing with silicone, so I decided I wanted to make a “flesh brick” &mdash; a LEGO fetus if you will. A soft, fleshy, mildly revolting, and definitely infantile brick would endeavor to evoke a sense of the famous coming of age novel by Jame Joyce from which the piece's name is taken. To go along with that, I picked up screen printing to produce books of “Impossible Instructions” to be used with this brick of life. They are blank. I like to let people draw their own conclusions, so I shall leave it there with a description.</p>
-                            <img  src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/capstone/capstone_final.jpg"/>
+                            <img  src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/capstone/capstone_final.jpg"/>
 
                         <h4>Pedestal</h4>
                             <p>This is the image used to burn the screen I used to ink directly onto the pedestal of the exhibit. I had just started the process of printing and hand cutting out the letters when I realized it was going to be a tediously slow undertaking. So, I took a risk with my freshly sanded and painted pedestal and tried screen printing right onto the side, and it worked out great.</p>
 
-                            <img id="framed" src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/capstone/pedestal_front.png"/>
+                            <img id="framed" src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/capstone/pedestal_front.png"/>
 
                         <h4>Book Covers</h4>
                             <p>These are the black screen layer only, so where there is black in the image is where ink will be let through the screen.</p>
-                            <img src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/capstone/cover_1_final.png"/> <img src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/capstone/cover_2_final.png"/> <img src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/capstone/cover_3_final.png"/> <img src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/capstone/cover_4_final.png"/>
+                            <img src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/capstone/cover_1_final.png"/> <img src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/capstone/cover_2_final.png"/> <img src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/capstone/cover_3_final.png"/> <img src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/capstone/cover_4_final.png"/>
 
                         <h4>Version 2</h4>
                             <p>Final casting in some SmoothOn Dragon Skin Medium, which is the leading silicone used for ballistics testing, meant to simulate human muscle and flesh.</p>
-                            <img src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/capstone/version_2.jpg"/>
+                            <img src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/capstone/version_2.jpg"/>
 
                         <h4>Version 1</h4>
                             <p>First attempt at taking a silicone cast out of a silicone mold &mdash; lots of mold release and SmoothOn Rebound 25.</p>
-                            <img src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/capstone/version_1.jpg"/>
+                            <img src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/capstone/version_1.jpg"/>
 
                         <h4>Master Sculpt</h4>
                             <p>The original clay sculpt of the LEGO brick. There is a wooden form in the core to save on some clay, and the final dimensions are 30cm x 15cm x 15cm.</p>
-                            <img src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/capstone/master_sculpt.jpg"/>
+                            <img src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/capstone/master_sculpt.jpg"/>
                 </div>
 
                 <hr>
@@ -230,7 +230,7 @@
                     <h2>Self Portrain w/ Mirror</h2>
                     <h3>Spring, 2017</h3>
                         <p>This was the first self portrait I had ever attempted. While half is unfinished, I got to focus more on detail work, as demonstrated by the reflection of the paper in my eye.</p>
-                        <img src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/drawing_1/self_portrait.jpg"/>
+                        <img src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/drawing_1/self_portrait.jpg"/>
                 </div>
 
                 <hr>
@@ -239,7 +239,7 @@
                     <h2>Portrait from Memory</h2>
                     <h3>Spring, 2017</h3>
                         <p>Drew my brother from memory. Working to achieve realism, the presence of the glass is alluded to with the distortion of the eye.</p>
-                        <img src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/drawing_1/portrait_from_memory.jpg"/>
+                        <img src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/drawing_1/portrait_from_memory.jpg"/>
                 </div>
 
                 <hr>
@@ -248,7 +248,7 @@
                     <h2>Field Notes</h2>
                     <h3>Spring 2017</h3>
                         <p>This piece, depicting a raccoon taking field notes, takes a journey into the surreal. By incorporating DaVinci’s Vitruvian Man and other artifacts of humanity, it questions the definition of a “higher” life form.</p>
-                        <img src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/drawing_1/final_project.jpg"/> <img src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/drawing_1/final_project_rough.jpg"/>
+                        <img src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/drawing_1/final_project.jpg"/> <img src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/drawing_1/final_project_rough.jpg"/>
                 </div>
 
                 <hr>
@@ -257,7 +257,7 @@
                     <h2>White on White Still Life</h2>
                     <h3>Winter, 2016</h3>
                         <p>Early work on greyscale drawing. The mug and its shadow I'm particularly fond of. This work helped provide an underlying understanding of graphite drawing, which has carried over into much of the other work I have done since, particularly black ink printing.</p>
-                        <img src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/drawing_1/still_life.jpg"/>
+                        <img src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/drawing_1/still_life.jpg"/>
                 </div>
 
                 <hr>
@@ -266,7 +266,7 @@
                     <h2>Bread Head</h2>
                         <h3>Fall, 2016</h3>
                             <p>This sticker was designed for the <i><a href= "http://wjrh.org/vbb/"> Various Breads and Butters</a></i> podcast hosted by two professors at Lafayette College. They had long had a sticker of a person sitting in a chair, but the head had been replaced with a loaf of bread. We referred to this character as "The Bread Head". I took this shameless poaching of the Grateful Dead, and developed the parody to its fullest extent.</p>
-                            <img id="framed" src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/other/bread_head.jpg"/>
+                            <img id="framed" src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/other/bread_head.jpg"/>
                 </div>
                 
                 <hr>
@@ -275,7 +275,7 @@
                     <h2>Day Blind Stars</h2>
                         <h3>Summer, 2016</h3>
                         <p>I've always loved stars. For me, being able to see stars at night was a factor when picking out colleges. Inspired by the text of <i>The Peace of Wild Things</i> by Wendell Berry I wanted to make a peace of my own that celebrated the night time. Starting with the stippled image I inverted the colors to produce the final image. This very much relates to the multiple inversion of an image required by the screen printing process, as well as positive and negative sculpts and casts.</p>
-                        <img src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/other/day_blind_stars_1.jpg"/> <img src="https://raw.githubusercontent.com/high-tech-hobo/portfolio/master/pictures/other/day_blind_stars_2.jpg"/>
+                        <img src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/other/day_blind_stars_1.jpg"/> <img src="https://raw.githubusercontent.com/thomas-williams/portfolio/master/pictures/other/day_blind_stars_2.jpg"/>
                 </div>
 
         
